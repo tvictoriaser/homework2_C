@@ -12,6 +12,14 @@ int secondDigit (int num)
     return num / 10 % 10;
 }
 
-int result = secondDigit(number);
+if (number > 99 && number < 1000)
+{
+    int result = secondDigit(number);
+    Console.WriteLine($"Вторая цифра числа {number} -> {result}");
+}
+else Console.WriteLine("Введите верное число");
 
-Console.WriteLine($"Вторая цифра числа {number} - {result}");
+
+
+
+

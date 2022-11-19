@@ -6,5 +6,19 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int ThirdDigit (int digit)
 {
-    if (digit)
+    while (digit > 999)
+    {
+        digit /= 10;
+    }
+    return digit % 10;
 }
+
+if (number > 99)
+{
+    int result = ThirdDigit(number);
+    Console.WriteLine($"Третья цифра числа {number} -> {result}");
+} 
+
+else Console.WriteLine($"У числа {number} нет третьей цифры");
+
+

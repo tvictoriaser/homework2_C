@@ -4,6 +4,8 @@ Console.WriteLine("Введите число: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number < 0) number = Math.Abs(number);
+
 int ThirdDigit (int digit)
 {
     while (digit > 999)
